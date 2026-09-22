@@ -1,0 +1,42 @@
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  max-width: 520px;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+button {
+  justify-self: start;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.success-msg {
+  margin-top: 1rem;
+  color: #047857;
+  font-weight: 600;
+}

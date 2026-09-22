@@ -1,0 +1,22 @@
+<section class="page-card">
+  <h1>Contact</h1>
+  <p>Send a message from this routed contact form view.</p>
+  <form class="contact-form" (submit)="onSubmit($event)">
+    <label>
+      Name
+      <input type="text" name="name" placeholder="Your name" required />
+    </label>
+    <label>
+      Email
+      <input type="email" name="email" placeholder="you@example.com" required />
+    </label>
+    <label>
+      Message
+      <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+    </label>
+    <button type="submit">Send Message</button>
+  </form>
+  @if (submitted) {
+    <p class="success-msg">Thanks! Your message was captured on the Contact route.</p>
+  }
+</section>
